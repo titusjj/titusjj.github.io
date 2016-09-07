@@ -8,6 +8,11 @@
     <!-- Begini of other -->
     <!--link href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,100%7CRoboto:400,700,300,100"
     rel="stylesheet" type="text/css"-->
+    <script>
+      function statefarm_click() {
+   alert('statefarm_click');
+  }
+    </script>
   </head><body>
     <div class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -69,7 +74,7 @@
         </div>
       </div>
     </div>
-    <div class="section" id="projects_section">
+    <div class="section" id="projects_nav_section">
       <div class="container" id="projects_nav_continer">
         <ul class="nav nav-justified nav-pills">
           <li class="active">
@@ -92,7 +97,7 @@
           <div class="tab-pane fade in active" id="all_pane">
             <div class="row">
               <div class="col-md-3 text-center">
-                <a href="#project_statefarm">
+                <a href="#project_nav_hr" onclick="statefarm_onClick()">
                   <h3>State Farm Distracted Driver Detection
                     <br><small>(Kaggle Competition)</small>
                   </h3>
@@ -100,7 +105,7 @@
                 <p>Using Deep Learning to detect distracted divers and to categorise them.</p>
               </div>
               <div class="col-md-3 text-center">
-                <a href="#project_airbnb">
+                <a href="#project_nav_hr" onclick="airbnb_onClick()">
                   <h3>Airbnb New User Bookings
                     <br><small>(Kaggle Competition)</small>
                   </h3>
@@ -108,46 +113,48 @@
                 <p>Models that can predict the most likely destination of the new user.</p>
               </div>
               <div class="col-md-3 text-center">
-                <a href="#project_blind">
+                <a href="#project_nav_hr" onclick="blind_onClick()">
                   <h3>Blind Spot Warning System<br><small>(Independent Project)</small></h3>
                 </a>
                 <p>Warn drivers if cars or trucks are detected in the blind spot cameras.</p>
               </div>
               <div class="col-md-3 text-center">
-                <a href="#project_tsr">
+                <a href="#project_nav_hr" onclick="tsr_onClick()">
                   <h3>Traffic Sign Recognition System<br><small>(M.E. Capstone Project)</small></h3>
                 </a>
-                <p>Using Deep Learning to detect and classify a few importatnt traffic signs.</p>
+                <p>Using Deep Learning to detect and classify a few important traffic signs.</p>
               </div>
               <div class="col-md-3 text-center">
-                <a href="#project_robots">
+                <a href="#project_nav_hr" onclick="robots_onClick()">
                   <h3>Robotic Systems<br><small>(Class Project)</small></h3>
                   </a>
                 <p>Projects taken up during the Robotic Systems Lab class.</p>
               </div>
-			  <div class="col-md-3 text-center">
-                <a href="#project_wallstreet">
+              <div class="col-md-3 text-center">
+                <a href="#project_nav_hr" onclick="guru_onClick()">
                   <h3>Guru<br><small>(Independent Project)</small></h3>
                   </a>
-                <p>Ensemble of Stock trading agents trained using Artificial Neural Networks</p>
+                <p>Ensemble of agents trained using Neural Nets that recommends buy/sell/hold</p>
               </div>
               <div class="col-md-3 text-center">
-                <a href="#project_raceline">
-                  <h3>Raceline<br><small>(Class Project)</small></h3>
+                <a href="#project_nav_hr" onclick="raceline_onClick()">
+                  <h3>Racing Line<br><small>(Class Project)</small></h3>
                   </a>
-                <p>Use Re-enforcement learning to make the simulated car learn the Raceline.</p>
+                <p>Use Re-enforcement learning to make the simulated car learn the Racing
+                  Line.</p>
               </div>
               <div class="col-md-3 text-center">
-                <a href="#project_catch">
+                <a href="#project_nav_hr" onclick="catch_onClick()">
                   <h3>Catch!<br><small>(Class Project)</small></h3>
                 </a>
                 <p>Catch the Ping-Pong ball thrown at the robotic arm.</p>
               </div>
               <div class="col-md-3 text-center">
-                <a href="#project_varcam">
+                <a href="#project_nav_hr" onclick="varcam_onClick()">
                   <h3>Variable Cam Engine<br><small>(B.E. Final Project)</small></h3>
                   </a>
-                <p>Increase power at higher speeds, not compremising fuel economy at low speeds</p>
+                <p>Increase power at higher speeds, not compromising fuel economy at low
+                  speeds</p>
               </div>
             </div>
             <!-- end row-->
@@ -156,7 +163,7 @@
           <div class="tab-pane fade" id="cv_pane">
             <div class="row">
               <div class="col-md-3 text-center">
-                <a href="#project_statefarm">
+                <a href="#project_nav_hr" onclick="statefarm_onClick()">
                   <h3>State Farm Distracted Driver Detection
                     <br><small>(Kaggle Competition)</small>
                   </h3>
@@ -164,25 +171,25 @@
                 <p>Using Deep Learning to detect distracted divers and to categorise them.</p>
               </div>
               <div class="col-md-3 text-center">
-                <a href="#project_blind">
+                <a href="#project_nav_hr" onclick="blind_onClick()">
                   <h3>Blind Spot Warning System<br><small>(Independent Project)</small></h3>
                 </a>
                 <p>Warn drivers if cars or trucks are detected in the blind spot cameras.</p>
               </div>
               <div class="col-md-3 text-center">
-                <a href="#project_tsr">
+                <a href="#project_nav_hr" onclick="tsr_onClick()">
                   <h3>Traffic Sign Recognition System<br><small>(M.E. Capstone Project)</small></h3>
                 </a>
-                <p>Using Deep Learning to detect and classify a few importatnt traffic signs.</p>
+                <p>Using Deep Learning to detect and classify a few important traffic signs.</p>
               </div>
               <div class="col-md-3 text-center">
-                <a href="#project_robots">
+                <a href="#project_nav_hr" onclick="robots_onClick()">
                   <h3>Robotic Systems<br><small>(Class Project)</small><br><br></h3>			
 				</a>
                 <p>Projects taken up during the Robotic Systems Lab class</p>
               </div>
               <div class="col-md-3 text-center">
-                <a href="#project_catch">
+                <a href="#project_nav_hr" onclick="catch_onClick()">
                   <h3>Catch!<br><small>(Class Project)</small></h3>
                 </a>
                 <p>Catch the Ping-Pong ball thrown at the robotic arm.</p>
@@ -193,7 +200,7 @@
           <div class="tab-pane fade" id="dl_pane">
             <div class="row">
               <div class="col-md-3 text-center">
-                <a href="#project_statefarm">
+                <a href="#project_nav_hr" onclick="statefarm">
                   <h3>State Farm Distracted Driver Detection
                     <br><small>(Kaggle Competition)</small>
                   </h3>
@@ -201,23 +208,23 @@
                 <p>Using Deep Learning to detect distracted divers and to categorise them.</p>
               </div>
               <div class="col-md-3 text-center">
-                <a href="#project_blind">
+                <a href="#project_nav_hr" onclick="blind_onClick()">
                   <h3>Blind Spot Warning System<br><small>(Independent Project)</small></h3>
                 </a>
                 <p>Warn drivers if cars or trucks are detected in the blind spot cameras.</p>
               </div>
               <div class="col-md-3 text-center">
-                <a href="#project_tsr">
+                <a href="#project_nav_hr" onclick="tsr_onClick()">
                   <h3>Traffic Sign Recognition System<br><small>(M.E. Capstone Project)</small></h3>
                 </a>
-                <p>Using Deep Learning to detect and classify a few importatnt traffic signs.</p>
+                <p>Using Deep Learning to detect and classify a few important traffic signs.</p>
               </div>
             </div>
           </div>
-		  <div class="tab-pane fade" id="ml_pane">
+          <div class="tab-pane fade" id="ml_pane">
             <div class="row">
               <div class="col-md-3 text-center">
-                <a href="#project_statefarm">
+                <a href="#project_nav_hr" onclick="statefarm_onClick()">
                   <h3>State Farm Distracted Driver Detection
                     <br><small>(Kaggle Competition)</small>
                   </h3>
@@ -225,7 +232,7 @@
                 <p>Using Deep Learning to detect distracted divers and to categorise them.</p>
               </div>
               <div class="col-md-3 text-center">
-                <a href="#project_airbnb">
+                <a href="#project_nav_hr" onclick="airbnb_onClick()">
                   <h3>Airbnb New User Bookings
                     <br><small>(Kaggle Competition)</small>
                   </h3>
@@ -233,57 +240,63 @@
                 <p>Models that can predict the most likely destination of the new user.</p>
               </div>
               <div class="col-md-3 text-center">
-                <a href="#project_blind">
+                <a href="#project_nav_hr" onclick="blind_onClick()">
                   <h3>Blind Spot Warning System<br><small>(Independent Project)</small></h3>
                 </a>
                 <p>Warn drivers if cars or trucks are detected in the blind spot cameras.</p>
               </div>
               <div class="col-md-3 text-center">
-                <a href="#project_tsr">
+                <a href="#project_nav_hr" onclick="tsr_onClick()">
                   <h3>Traffic Sign Recognition System<br><small>(M.E. Capstone Project)</small></h3>
                 </a>
-                <p>Using Deep Learning to detect and classify a few importatnt traffic signs.</p>
+                <p>Using Deep Learning to detect and classify a few important traffic signs.</p>
               </div>
             </div>
             <div class="row">
               <div class="col-md-3 text-center">
-                <a href="#project_raceline">
-                  <h3>Raceline<br><small>(Class Project)</small></h3>
+                <a href="#project_nav_hr" onclick="raceline_onClick()">
+                  <h3>Racing Line<br><small>(Class Project)</small></h3>
                   </a>
-                <p>Use Re-enforcement learning to make the simulated car learn the Raceline.</p>
+                <p>Use Re-enforcement learning to make the simulated car learn the Racing
+                  Line.</p>
               </div>
               <div class="col-md-3 text-center">
-                <a href="#project_wallstreet">
+                <a href="#project_nav_hr" onclick="guru_onClick()">
                   <h3>Guru<br><small>(Independent Project)</small></h3>
                   </a>
-                <p>Ensemble of Stock trading agents trained using Artificial Neural Networks</p>
+                <p>Ensemble of agents trained using Neural Nets that recommends buy/sell/hold</p>
               </div>
             </div>
           </div>
           <div class="tab-pane fade" id="others_pane">
-		    <div class="row">
-			  <div class="col-md-3 text-center">
-                <a href="#project_varcam">
+            <div class="row">
+              <div class="col-md-3 text-center">
+                <a href="#project_nav_hr" onclick="varcam_onClick()">
                   <h3>Variable Cam Engine<br><small>(B.E. Final Project)</small></h3>
                   </a>
-                <p>Increase power at higher speeds, not compremising fuel economy at low speeds</p>
+                <p>Increase power at higher speeds, not compromising fuel economy at low
+                  speeds</p>
               </div>
-			</div>
+            </div>
           </div>
         </div>
         <!-- end tabbed Content-->
-        <hr>
+        <hr id="project_nav_hr">
       </div>
       <!-- end of project_nav_container -->
+    </div>
+    <div class="section" id="project_desc_section">
       <div class="container" id="project_description_container">
         <div class="row">
-          <div class="col-md-6">
-            <img src="http://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png" class="img-responsive">
+          <div class="col-md-4">
+            <img class="img-responsive" id="project_desc_img" src="http://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png">
           </div>
-          <div class="col-md-6">
-            <h1>A title</h1>
-            <h3>A subtitle</h3>
-            <p>Description in a paragraph or two</p>
+          <div class="col-md-8">
+            <h1 id="project_desc_title">A title</h1>
+            <h3 id="project_desc_subtitle">A subtitle</h3>
+            <p id="project_desc_para">Description in a paragraph or two</p>
+            <br>
+            <a href="#projects" class="btn btn-lg btn-primary">View Another Project</a>
           </div>
         </div>
       </div>
@@ -377,7 +390,7 @@
         </div>
       </div>
     </div>
-    <div class="section">
+    <div class="section" id="contact">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
