@@ -9,9 +9,58 @@
     <!--link href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,100%7CRoboto:400,700,300,100"
     rel="stylesheet" type="text/css"-->
     <script>
-      function statefarm_click() {
-   alert('statefarm_click');
-  }
+      function hide_all_projects(){
+    	  
+    	   $('#project_desc_section_statefarm').hide();
+    	   $('#project_desc_section_airbnb').hide();
+    	   $('#project_desc_section_blind').hide();
+    	   $('#project_desc_section_tsr').hide();
+    	   $('#project_desc_section_robots').hide();
+    	   $('#project_desc_section_raceline').hide();
+    	   $('#project_desc_section_catch').hide();
+    	   $('#project_desc_section_varcam').hide();
+    	   
+    	  }
+    	  
+          function statefarm_onClick() {
+    	    hide_all_projects();
+            $('#project_desc_section_statefarm').show();
+    	  }
+    	  
+    	  function airbnb_onClick() {
+    	    hide_all_projects();
+            $('#project_desc_section_airbnb').show();
+    	  }
+    	  
+    	  function blind_onClick() {
+    	    hide_all_projects();
+            $('#project_desc_section_blind').show();
+    	  }
+    	  
+    	  function tsr_onClick() {
+    	    hide_all_projects();
+            $('#project_desc_section_tsr').show();
+    	  }
+    	  
+    	  function robots_onClick() {
+    	    hide_all_projects();
+            $('#project_desc_section_robots').show();
+    	  }
+    	  
+    	  function raceline_onClick() {
+    	    hide_all_projects();
+            $('#project_desc_section_raceline').show();
+    	  }
+    	  
+    	  function catch_onClick() {
+    	    hide_all_projects();
+            $('#project_desc_section_catch').show();
+    	  }
+    	  
+    	  function varcam_onClick() {
+    	    hide_all_projects();
+            $('#project_desc_section_varcam').show();
+    	  }
     </script>
   </head><body>
     <div class="navbar navbar-default navbar-fixed-top">
@@ -200,7 +249,7 @@
           <div class="tab-pane fade" id="dl_pane">
             <div class="row">
               <div class="col-md-3 text-center">
-                <a href="#project_nav_hr" onclick="statefarm">
+                <a href="#project_nav_hr" onclick="statefarm_onClick()">
                   <h3>State Farm Distracted Driver Detection
                     <br><small>(Kaggle Competition)</small>
                   </h3>
@@ -285,24 +334,212 @@
       </div>
       <!-- end of project_nav_container -->
     </div>
-    <div class="section" id="project_desc_section">
-      <div class="container" id="project_description_container">
+    <div class="section" id="project_desc_section_statefarm" hidden="true">
+      <div class="container">
         <div class="row">
-          <div class="col-md-4">
-            <img class="img-responsive" id="project_desc_img" src="http://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png">
+          <div class="col-md-12">
+            <h2>State Farm Distracted Driver Detection
+              <br>
+              <small>(Kaggle Competetion)</small>
+            </h2>
+            <p class="text-justify">Used caffe to train deep neural networks to detect and classify images
+              of distracted drivers. Trained models with pertained AlexNet, NIN, GoogLeNet,
+              VGG, with slight variations as well. Iteratively improve models; evaluate
+              models, analyse results, make changes, repeat the process. Document results
+              of the various models, come up with theories as to why it works/doesn't
+              , then change the architecture of the network to improve performance. Used
+              a classical method of image classification (HOG-SVM) as the base line.</p>
+            <a href="https://www.kaggle.com/c/state-farm-distracted-driver-detection">State Farm Distracted Driver Detection, Competetion Page</a>
+              <br>
+              <br>
+              <a href="#projects" class="btn btn-lg btn-primary">View Another Project</a>
           </div>
-          <div class="col-md-8">
-            <h1 id="project_desc_title">A title</h1>
-            <h3 id="project_desc_subtitle">A subtitle</h3>
-            <p id="project_desc_para">Description in a paragraph or two</p>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="project_desc_section_airbnb" hidden="true">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>Airbnb New User Bookings
+              <br>
+              <small>(Kaggle Competetion)</small>
+            </h2>
+            <p class="text-justify">Replaced the missing values and erroneous data with statistically meaningful
+              values. Employed a novel sampling strategy, after clustering data using
+              MATLAB self organizing maps. Engineered 50 meaningful features from more
+              than 450 features contained in more than 10 million records. Trained and
+              evaluated models using r packages like GBM and Random Forest. Achieved
+              a score of 0.87427 (Best 0.88210)</p>
+            <a href="https://www.kaggle.com/c/airbnb-recruiting-new-user-bookings">
+              Airbnb New User Bookings, Competetion Page
+            </a>
+            <br>
             <br>
             <a href="#projects" class="btn btn-lg btn-primary">View Another Project</a>
           </div>
         </div>
       </div>
-      <!-- end of project_description_container-->
     </div>
-    <!-- end of project_link section-->
+    <!-- end of project_description section-->
+    <div class="section" id="project_desc_section_blind" hidden="true">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="http://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png" class="img-responsive">
+          </div>
+          <div class="col-md-8">
+            <h2>Blind spot warning system</h2>
+            <p class="text-justify">Developed a blind spot warning system on Jetson Embedded development kit.
+              Camera connected to the dev board captures images using opencv framework.
+              Fine-tuned AlexNet caffe model to classify images of cars vs other objects.</p>
+            <br>
+            <a href="#projects" class="btn btn-lg btn-primary">View Another Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="project_desc_section_tsr" hidden="true">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="http://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png" class="img-responsive">
+          </div>
+          <div class="col-md-8">
+            <h2>Traffic Sign Recognition System
+              <br>
+              <small>(M.E. Capstone Project)</small>
+            </h2>
+            <p class="text-justify">Extracts image features using pre-trained Convolution Neural Networks
+              (AlexNet layer 6 output). Trained an SVM on these features to detect and
+              classify the Stop, Yield and Warning signs. Explored PCA, SVD and MDS for
+              dimensionality reduction, but finally SVM was trained without dimensionality
+              reduction because of the superior performance of raw data.
+              <br>Used VATIC, an open source video annotation tool, for labeling the Traffic
+              Signs in video clips.
+              <br>Achieved a very low false negative rate of 2% and classification accuracy
+              of 78%.
+              <br>Implemented the system for the android platform using DeepBeliefSDK and
+              libSVM. Used java apis for multithreading, Executors, synchronization blocks,
+              Locks and Latches, to achieve high level of concurrency to make the system
+              real-time.</p>
+            <br>
+            <a href="#projects" class="btn btn-lg btn-primary">View Another Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="project_desc_section_robots" hidden="true">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="http://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png" class="img-responsive">
+          </div>
+          <div class="col-md-8">
+            <h2>Robotic Systems
+              <br>
+              <small>(Class Project)</small>
+            </h2>
+            <p class="text-justify"></p>
+            <h2></h2>
+            <p class="text-justify">Designed and fabricated a delta arm and end-effector attachments for a
+              quadcopter. A state machine was implement on the BeafleBone using C/C++,
+              to autonomously pick-up/drop-off the ping pong ball, when the quardcopter
+              was in range of the target. The BeagleBone black controlled the servo motors
+              to move the arm around. And the IMU and pixy camera localizes the drone’s
+              position relative to the target with the help of color coded markers.</p>
+            <p class="text-justify">Performed the camera calibration using, camera suit (by umich april labs).
+              Projected the LIDAR points onto the corrected images to identify obstacles
+              and targets. Rendered the MAEBot's temporal position relative to the environment
+              using the IMU and 2D LIDAR data.</p>
+              <p class="text-justify">Programmed a 4-DOF arm to autonomously navigate using Probabilistic RoadMap
+                and Potential Field. An overhead camera was used as the vision system,
+                and implemented template matching algorithm along with non-maxima suppression
+                for detecting targets and obstacles.</p>
+              <br>
+              <a href="#projects" class="btn btn-lg btn-primary">View Another Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="project_desc_section_raceline" hidden="true">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="http://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png" class="img-responsive">
+          </div>
+          <div class="col-md-8">
+            <h2>Race Line
+              <br>
+              <small>(Class Project)</small>
+            </h2>
+            <p class="text-justify"></p>
+            <h2></h2>
+            <p class="text-justify">The reinforcement learning algorithm learns the amount of acceleration
+              and braking required by the simulated vehicle to follow the fastest path
+              (Race Line) out of a corner. Implemented a real-time sample efficient reinforcement
+              learning algorithm in C++. Used Random forest trees and Monte Carlo tree
+              searches for sample efficiency and real-time processing</p>
+            <br>
+            <a href="#projects" class="btn btn-lg btn-primary">View Another Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="project_desc_section_catch" hidden="true">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="http://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png" class="img-responsive">
+          </div>
+          <div class="col-md-8">
+            <h2>Catch!
+              <br>
+              <small>(Class Project)</small>
+            </h2>
+            <p class="text-justify">Simulated a 4-DOF robotic arm to intercept a Ping-Pong ball. The path
+              of the ball was captured in the real word using MS Kinect. openCV implementations
+              of color filtering and Hough Circles were used for detection to locate
+              the initial position of the ball.</p>
+            <p class="text-justify">A variation of the Lucas-Kanade algorithm was implemented for tracking
+              the ball. To approximate the current and future positions of the ball,
+              the physics (equations of motions) of the ball was also taken into account.
+              All the above functionality was implemented in C++.</p>
+            <p class="text-justify">The motion of the arm was simulated using Matlab/Simulink. SolidWorks
+              was used for designing the arm. The expected trajectory was given to the
+              simulation as and when it was calculated.</p>
+            <br>
+            <a href="#projects" class="btn btn-lg btn-primary">View Another Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="project_desc_section_varcam" hidden="true">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="http://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png" class="img-responsive">
+          </div>
+          <div class="col-md-8">
+            <h2>Variable Cam Engine
+              <br>
+              <small>(B.E. Final Project)</small>
+            </h2>
+            <p class="text-justify">Two different cam profiles for the intake port; stock cam and a high performance
+              cam. High performance cam profile keeps the intake port open for a longer
+              duration during the intake cycle. A controller switches to the high performance
+              cam at higher rpm.
+              <br>Realized power gains up to 8% in simulation. Implemented the design on
+              a Royal Enfield Bullet 350cc engine.
+              <br>The engine delivers more power when needed (at higher rpm) using the high
+              performance cam, but the fuel efficiency at normal running speed is not
+              affected as it uses the standard cam.</p>
+            <br>
+            <a href="#projects" class="btn btn-lg btn-primary">View Another Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="section" id="experience">
       <div class="container">
         <div class="row">
