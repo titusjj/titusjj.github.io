@@ -10,57 +10,57 @@
     rel="stylesheet" type="text/css"-->
     <script>
       function hide_all_projects(){
-    	  
-    	   $('#project_desc_section_statefarm').hide();
-    	   $('#project_desc_section_airbnb').hide();
-    	   $('#project_desc_section_blind').hide();
-    	   $('#project_desc_section_tsr').hide();
-    	   $('#project_desc_section_robots').hide();
-    	   $('#project_desc_section_raceline').hide();
-    	   $('#project_desc_section_catch').hide();
-    	   $('#project_desc_section_varcam').hide();
-    	   
-    	  }
-    	  
-          function statefarm_onClick() {
-    	    hide_all_projects();
-            $('#project_desc_section_statefarm').show();
-    	  }
-    	  
-    	  function airbnb_onClick() {
-    	    hide_all_projects();
-            $('#project_desc_section_airbnb').show();
-    	  }
-    	  
-    	  function blind_onClick() {
-    	    hide_all_projects();
-            $('#project_desc_section_blind').show();
-    	  }
-    	  
-    	  function tsr_onClick() {
-    	    hide_all_projects();
-            $('#project_desc_section_tsr').show();
-    	  }
-    	  
-    	  function robots_onClick() {
-    	    hide_all_projects();
-            $('#project_desc_section_robots').show();
-    	  }
-    	  
-    	  function raceline_onClick() {
-    	    hide_all_projects();
-            $('#project_desc_section_raceline').show();
-    	  }
-    	  
-    	  function catch_onClick() {
-    	    hide_all_projects();
-            $('#project_desc_section_catch').show();
-    	  }
-    	  
-    	  function varcam_onClick() {
-    	    hide_all_projects();
-            $('#project_desc_section_varcam').show();
-    	  }
+            	  
+            	   $('#project_desc_section_statefarm').hide();
+            	   $('#project_desc_section_airbnb').hide();
+            	   $('#project_desc_section_blind').hide();
+            	   $('#project_desc_section_tsr').hide();
+            	   $('#project_desc_section_robots').hide();
+            	   $('#project_desc_section_raceline').hide();
+            	   $('#project_desc_section_catch').hide();
+            	   $('#project_desc_section_varcam').hide();
+            	   
+            	  }
+            	  
+                  function statefarm_onClick() {
+            	    hide_all_projects();
+                    $('#project_desc_section_statefarm').show();
+            	  }
+            	  
+            	  function airbnb_onClick() {
+            	    hide_all_projects();
+                    $('#project_desc_section_airbnb').show();
+            	  }
+            	  
+            	  function blind_onClick() {
+            	    hide_all_projects();
+                    $('#project_desc_section_blind').show();
+            	  }
+            	  
+            	  function tsr_onClick() {
+            	    hide_all_projects();
+                    $('#project_desc_section_tsr').show();
+            	  }
+            	  
+            	  function robots_onClick() {
+            	    hide_all_projects();
+                    $('#project_desc_section_robots').show();
+            	  }
+            	  
+            	  function raceline_onClick() {
+            	    hide_all_projects();
+                    $('#project_desc_section_raceline').show();
+            	  }
+            	  
+            	  function catch_onClick() {
+            	    hide_all_projects();
+                    $('#project_desc_section_catch').show();
+            	  }
+            	  
+            	  function varcam_onClick() {
+            	    hide_all_projects();
+                    $('#project_desc_section_varcam').show();
+            	  }
     </script>
   </head><body>
     <div class="navbar navbar-default navbar-fixed-top">
@@ -469,7 +469,7 @@
             <img src="http://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png" class="img-responsive">
           </div>
           <div class="col-md-8">
-            <h2>Race Line
+            <h2>Racing Line
               <br>
               <small>(Class Project)</small>
             </h2>
@@ -477,9 +477,9 @@
             <h2></h2>
             <p class="text-justify">The reinforcement learning algorithm learns the amount of acceleration
               and braking required by the simulated vehicle to follow the fastest path
-              (Race Line) out of a corner. Implemented a real-time sample efficient reinforcement
-              learning algorithm in C++. Used Random forest trees and Monte Carlo tree
-              searches for sample efficiency and real-time processing</p>
+              (Racing Line) out of a corner. Implemented a real-time sample efficient
+              reinforcement learning algorithm in C++. Used Random forest trees and Monte
+              Carlo tree searches for sample efficiency and real-time processing</p>
             <br>
             <a href="#projects" class="btn btn-lg btn-primary">View Another Project</a>
           </div>
@@ -489,27 +489,35 @@
     <div class="section" id="project_desc_section_catch" hidden="true">
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
-            <img src="http://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png" class="img-responsive">
-          </div>
-          <div class="col-md-8">
+          <div class="col-md-6">
             <h2>Catch!
               <br>
               <small>(Class Project)</small>
             </h2>
-            <p class="text-justify">Simulated a 4-DOF robotic arm to intercept a Ping-Pong ball. The path
-              of the ball was captured in the real word using MS Kinect. openCV implementations
-              of color filtering and Hough Circles were used for detection to locate
-              the initial position of the ball.</p>
-            <p class="text-justify">A variation of the Lucas-Kanade algorithm was implemented for tracking
-              the ball. To approximate the current and future positions of the ball,
-              the physics (equations of motions) of the ball was also taken into account.
-              All the above functionality was implemented in C++.</p>
-            <p class="text-justify">The motion of the arm was simulated using Matlab/Simulink. SolidWorks
-              was used for designing the arm. The expected trajectory was given to the
-              simulation as and when it was calculated.</p>
-            <br>
-            <a href="#projects" class="btn btn-lg btn-primary">View Another Project</a>
+            <p class="text-justify">For the first path of the project, the path of a Ping-Pong ball was captured
+              in the real word using MS Kinect. openCV implementations of color filtering
+              and Hough Circles were used for detection, to locate the initial position
+              of the ball. A variation of the Lucas-Kanade algorithm was implemented
+              for tracking the ball. To approximate the current and future positions
+              of the ball, the physics (equations of motions) of the ball was also taken
+              into account. All the above functionality was implemented in C++.</p>
+            <p class="text-justify">For the second part of the project we model a 4-DOF robotic arm and compare
+              two approaches to catching an object thrown at a manipulator. The first
+              approach is a simple and fairly intuitive algorithm where the robot aims
+              at intercepting the object trajectory with its end-effector. The second
+              approach tries to follow the projectile before finally catching it, this
+              mimic how humans catch an object. The motion of the arm was simulated using
+              Matlab/Simulink and SolidWorks was used for designing the arm.</p>
+              <br>
+              <a href="#projects" class="btn btn-lg btn-primary">View Another Project</a>
+          </div>
+          <div class="col-md-6 text-center">
+            <h2>
+              <br>
+            </h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Vk4wcQuMtkg" frameborder="0" allowfullscreen=""></iframe>
+            <!--img src="http://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png"
+            class="img-responsive"-->
           </div>
         </div>
       </div>
