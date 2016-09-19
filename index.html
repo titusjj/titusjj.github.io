@@ -10,57 +10,64 @@
     rel="stylesheet" type="text/css"-->
     <script>
       function hide_all_projects(){
-                            	  
-                            	   $('#project_desc_section_statefarm').hide();
-                            	   $('#project_desc_section_airbnb').hide();
-                            	   $('#project_desc_section_blind').hide();
-                            	   $('#project_desc_section_tsr').hide();
-                            	   $('#project_desc_section_robots').hide();
-                            	   $('#project_desc_section_raceline').hide();
-                            	   $('#project_desc_section_catch').hide();
-                            	   $('#project_desc_section_varcam').hide();
-                            	   
-                            	  }
-                            	  
-                                  function statefarm_onClick() {
-                            	    hide_all_projects();
-                                    $('#project_desc_section_statefarm').show();
-                            	  }
-                            	  
-                            	  function airbnb_onClick() {
-                            	    hide_all_projects();
-                                    $('#project_desc_section_airbnb').show();
-                            	  }
-                            	  
-                            	  function blind_onClick() {
-                            	    hide_all_projects();
-                                    $('#project_desc_section_blind').show();
-                            	  }
-                            	  
-                            	  function tsr_onClick() {
-                            	    hide_all_projects();
-                                    $('#project_desc_section_tsr').show();
-                            	  }
-                            	  
-                            	  function robots_onClick() {
-                            	    hide_all_projects();
-                                    $('#project_desc_section_robots').show();
-                            	  }
-                            	  
-                            	  function raceline_onClick() {
-                            	    hide_all_projects();
-                                    $('#project_desc_section_raceline').show();
-                            	  }
-                            	  
-                            	  function catch_onClick() {
-                            	    hide_all_projects();
-                                    $('#project_desc_section_catch').show();
-                            	  }
-                            	  
-                            	  function varcam_onClick() {
-                            	    hide_all_projects();
-                                    $('#project_desc_section_varcam').show();
-                            	  }
+                                    	  
+                                    	   $('#project_desc_section_statefarm').hide();
+                                    	   $('#project_desc_section_airbnb').hide();
+                                    	   $('#project_desc_section_blind').hide();
+                                    	   $('#project_desc_section_tsr').hide();
+                                    	   $('#project_desc_section_robots').hide();
+        								   $('#project_desc_section_guru').hide();
+                                    	   $('#project_desc_section_raceline').hide();
+                                    	   $('#project_desc_section_catch').hide();
+                                    	   $('#project_desc_section_varcam').hide();
+        								   
+                                    	   
+                                    	  }
+                                    	  
+                                          function statefarm_onClick() {
+                                    	    hide_all_projects();
+                                            $('#project_desc_section_statefarm').show();
+                                    	  }
+                                    	  
+                                    	  function airbnb_onClick() {
+                                    	    hide_all_projects();
+                                            $('#project_desc_section_airbnb').show();
+                                    	  }
+                                    	  
+                                    	  function blind_onClick() {
+                                    	    hide_all_projects();
+                                            $('#project_desc_section_blind').show();
+                                    	  }
+                                    	  
+                                    	  function tsr_onClick() {
+                                    	    hide_all_projects();
+                                            $('#project_desc_section_tsr').show();
+                                    	  }
+                                    	  
+                                    	  function robots_onClick() {
+                                    	    hide_all_projects();
+                                            $('#project_desc_section_robots').show();
+                                    	  }
+        								  
+        								  function guru_onClick() {
+                                    	    hide_all_projects();
+                                            $('#project_desc_section_guru').show();
+                                    	  }
+                                    	  
+                                    	  function raceline_onClick() {
+                                    	    hide_all_projects();
+                                            $('#project_desc_section_raceline').show();
+                                    	  }
+                                    	  
+                                    	  function catch_onClick() {
+                                    	    hide_all_projects();
+                                            $('#project_desc_section_catch').show();
+                                    	  }
+                                    	  
+                                    	  function varcam_onClick() {
+                                    	    hide_all_projects();
+                                            $('#project_desc_section_varcam').show();
+                                    	  }
     </script>
   </head><body>
     <div class="navbar navbar-default navbar-fixed-top">
@@ -99,8 +106,8 @@
     <div class="section" id="intro">
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
-            <img src="img/graduation.jpeg" class="img-responsive img-thumbnail">
+          <div class="col-md-3">
+            <img src="img\JohnTitus.JPG" class="img-circle img-responsive">
           </div>
           <div class="col-md-8">
             <h1 class="text-left">About me</h1>
@@ -183,7 +190,7 @@
                 <a href="#project_nav_hr" onclick="guru_onClick()">
                   <h3>Guru<br><small>(Independent Project)</small></h3>
                   </a>
-                <p>Ensemble of agents trained using Neural Nets that recommends buy/sell/hold</p>
+                <p>Can an AI stock trading agent outsmart a human?</p>
               </div>
               <div class="col-md-3 text-center">
                 <a href="#project_nav_hr" onclick="raceline_onClick()">
@@ -313,7 +320,7 @@
                 <a href="#project_nav_hr" onclick="guru_onClick()">
                   <h3>Guru<br><small>(Independent Project)</small></h3>
                   </a>
-                <p>Ensemble of agents trained using Neural Nets that recommends buy/sell/hold</p>
+                <p>Can an AI stock trading agent outsmart a human?</p>
               </div>
             </div>
           </div>
@@ -342,6 +349,11 @@
               <br>
               <small>(Kaggle Competetion)</small>
             </h2>
+            <h2></h2>
+            <!-- needed for proper spacing -->
+            <p class="text-justify">The challenge was to classify the driver's behavior based on images from
+              dashboard cameras monitoring the driver’s attentiveness. The dataset consisted
+              of more than 100,000 dashboard camera images, categorized into 10 categories.</p>
             <p class="text-justify">Used caffe to train deep neural networks to detect and classify images
               of distracted drivers. Trained models with pertained AlexNet, NIN, GoogLeNet,
               VGG, with slight variations as well. Iteratively improve models; evaluate
@@ -349,10 +361,10 @@
               of the various models, come up with theories as to why it works/doesn't
               , then change the architecture of the network to improve performance. Used
               a classical method of image classification (HOG-SVM) as the base line.</p>
-            <a href="https://www.kaggle.com/c/state-farm-distracted-driver-detection">State Farm Distracted Driver Detection, Competetion Page</a>
-              <br>
-              <br>
-              <a href="#projects" class="btn btn-lg btn-primary">View Another Project</a>
+              <a href="https://www.kaggle.com/c/state-farm-distracted-driver-detection">State Farm Distracted Driver Detection, Competetion Page</a>
+                <br>
+                <br>
+                <a href="#projects" class="btn btn-lg btn-primary">View Another Project</a>
           </div>
         </div>
       </div>
@@ -365,6 +377,10 @@
               <br>
               <small>(Kaggle Competetion)</small>
             </h2>
+            <h2></h2>
+            <!-- needed for proper spacing -->
+            <p class="text-justify">The challenge was to predict in which country a new user will make their
+              first booking.</p>
             <p class="text-justify">Replaced the missing values and erroneous data with statistically meaningful
               values. Employed a novel sampling strategy, after clustering data using
               MATLAB self organizing maps. Engineered 50 meaningful features from more
@@ -389,7 +405,12 @@
             <img src="http://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png" class="img-responsive">
           </div>
           <div class="col-md-8">
-            <h2>Blind spot warning system</h2>
+            <h2>Blind spot warning system
+              <br>
+              <small>(Independent Project)</small>
+            </h2>
+            <h2></h2>
+            <!-- needed for proper spacing -->
             <p class="text-justify">Developed a blind spot warning system on Jetson Embedded development kit.
               Camera connected to the dev board captures images using opencv framework.
               Fine-tuned AlexNet caffe model to classify images of cars vs other objects.</p>
@@ -406,12 +427,12 @@
             <img src="img/SequenceDiagram.png" class="img-responsive">
           </div>
           <div class="col-md-8">
-            <!-- <div class="row">
-			-->
             <h2>Traffic Sign Recognition System
               <br>
               <small>(M.E. Capstone Project)</small>
             </h2>
+            <h2></h2>
+            <!-- needed for proper spacing -->
             <p class="text-justify">Extracts image features using pre-trained Convolution Neural Networks
               (AlexNet layer 6 output). Trained an SVM on these features to detect and
               classify the Stop, Yield and Warning signs. Explored PCA, SVD and MDS for
@@ -426,38 +447,24 @@
               Locks and Latches, to achieve high level of concurrency to make the system
               real-time.</p>
             <br>
-            <!-- </div>
-			</div class="row">
-			-->
-            <div class="col-md-1 text-center">
-              <a href="https://github.com/titusjj/TSR" target="_blank">
-                  <i class="fa fa-2x fa-github"></i>
-                  <br>Code
-                </a>
-            </div>
-            <div class="col-md-1 text-center">
-              <a href="tsr_project_report.html" target="_blank">
-				  <i class="fa fa-2x fa-file-pdf-o"></i>
-				  <br>Project Report
-				</a>
-            </div>
-            <!-- </div>
-		    <!-- end of row fa-fw-->
-            <!-- <div class="row">
-			<div class="col-md-4">
-			</div>
-			<div class="col-md-8">
-			-->
+            <a href="https://github.com/titusjj/TSR" target="_blank">
+              <i class="fa fa-2x fa-github"></i> Code
+            </a>
+            <br>
+            <br>
+            <a href="tsr_project_report.html" target="_blank">
+			  <i class="fa fa-2x fa-file-pdf-o"></i> Project Report
+			</a>
+            <br>
             <br>
             <a href="#projects" class="btn btn-lg btn-primary">View Another Project</a>
           </div>
-          <!-- end of row-->
+          <!-- end of col8-->
         </div>
-        <!-- end of col8-->
+        <!-- end of row-->
       </div>
-      <!-- end of row-->
+      <!-- end of container-->
     </div>
-    <!-- end of container-->
     <!-- end of section-->
     <div class="section" id="project_desc_section_robots" hidden="true">
       <div class="container">
@@ -470,24 +477,51 @@
               <br>
               <small>(Class Project)</small>
             </h2>
-            <p class="text-justify"></p>
             <h2></h2>
+            <!-- needed for proper spacing -->
             <p class="text-justify">Designed and fabricated a delta arm and end-effector attachments for a
               quadcopter. A state machine was implement on the BeafleBone using C/C++,
               to autonomously pick-up/drop-off the ping pong ball, when the quardcopter
               was in range of the target. The BeagleBone black controlled the servo motors
               to move the arm around. And the IMU and pixy camera localizes the drone’s
               position relative to the target with the help of color coded markers.</p>
-            <p class="text-justify">Performed the camera calibration using, camera suit (by umich april labs).
-              Projected the LIDAR points onto the corrected images to identify obstacles
-              and targets. Rendered the MAEBot's temporal position relative to the environment
-              using the IMU and 2D LIDAR data.</p>
+            <p class="text-justify">Performed the camera calibration using, camera suit (by april labs). Projected
+              the LIDAR points onto the image, after distorting the points using the
+              camera calibration values. Rendered the MAEBot's temporal position elative
+              to the environment using the IMU and 2D LIDAR data.</p>
               <p class="text-justify">Programmed a 4-DOF arm to autonomously navigate using Probabilistic RoadMap
                 and Potential Field. An overhead camera was used as the vision system,
                 and implemented template matching algorithm along with non-maxima suppression
                 for detecting targets and obstacles.</p>
               <br>
               <a href="#projects" class="btn btn-lg btn-primary">View Another Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="project_desc_section_guru" hidden="true">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="http://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png" class="img-responsive">
+          </div>
+          <div class="col-md-8">
+            <h2>Guru
+              <br>
+              <small>(Independent Project)</small>
+            </h2>
+            <h2></h2>
+            <!-- needed for proper spacing -->
+            <p class="text-justify">Stock trading agents were trained on the NIFTY 50, a well diversified
+              50 stocks accounting for 22 sectors of the Indian economy.</p>
+            <p class="text-justify">Genetic algorithm was used to find optimal set of indicators and rules
+              for a long term (controlled by fitness function) trading strategy. Indicators
+              are weighted averages over different time periods (weekly, … annually)
+              and their different rate of changes (d/dt, d2/dt2,…). Buying and selling
+              strategies are optimized separately. Given the input on a particluar day
+              the agents suggests buy/hold or sell/hold.</p>
+            <br>
+            <a href="#projects" class="btn btn-lg btn-primary">View Another Project</a>
           </div>
         </div>
       </div>
@@ -503,8 +537,8 @@
               <br>
               <small>(Class Project)</small>
             </h2>
-            <p class="text-justify"></p>
             <h2></h2>
+            <!-- needed for proper spacing -->
             <p class="text-justify">The reinforcement learning algorithm learns the amount of acceleration
               and braking required by the simulated vehicle to follow the fastest path
               (Racing Line) out of a corner. Implemented a real-time sample efficient
@@ -524,6 +558,8 @@
               <br>
               <small>(Class Project)</small>
             </h2>
+            <h2></h2>
+            <!-- needed for proper spacing -->
             <p class="text-justify">For the first part of the project, the path of a Ping-Pong ball was captured
               in the real word using MS Kinect. openCV implementations of color filtering
               and Hough Circles were used for detection, to locate the initial position
@@ -557,8 +593,6 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <!-- <img src="img/varcam_engin.png" class="img-responsive" id="varcam_img">
-		  -->
             <div id="carousel-example" data-interval="false" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
                 <div class="item active">
@@ -586,6 +620,8 @@
               <br>
               <small>(B.E. Final Project)</small>
             </h2>
+            <h2></h2>
+            <!-- needed for proper spacing -->
             <p class="text-justify">Two different cam profiles for the intake port; stock cam and a high performance
               cam. High performance cam profile keeps the intake port open for a longer
               duration during the intake cycle. A controller switches to the high performance
@@ -663,7 +699,7 @@
             <h3>M.E. Robotics -
               <i>Inteligence &amp; Learning</i>
             </h3>
-            <p>Place Holder</p>
+            <!-- p>Place Holder</p -->
           </div>
           <div class="col-md-2">
             <img src="img/Umichigan_color_seal.png" class="hidden-xs img-responsive">
@@ -680,7 +716,7 @@
               <small>&nbsp;Chennai</small>
             </h2>
             <h3>B.E. Mechanical Engineering</h3>
-            <p>Place Holder</p>
+            <!-- p>Place Holder</p -->
           </div>
           <div class="col-md-2">
             <img src="img/Anna_University_Logo.png" class="hidden-xs img-responsive">
