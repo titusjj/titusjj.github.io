@@ -1,0 +1,139 @@
+<html><head>
+    <title>John Titus interested in Computer Vision, Machine Learning and Artificial
+      Intelligence</title>
+    <meta name="description" content="Author: John Titus">
+    <meta charset="utf-8">
+    <meta name="viewport " content="width=device-width, initial-scale=1 ">
+    <script type="text/javascript " src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js "></script>
+    <script type="text/javascript " src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js "></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet " type="text/css ">
+    <link href="css/page.css " rel="stylesheet " type="text/css ">
+    <!-- Begini of other -->
+    <!--link href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,100%7CRoboto:400,700,300,100
+    " rel="stylesheet " type="text/css "-->
+    <script>
+      function hide_all_projects(){
+                                            	  
+                                            	   $('#project_desc_section_statefarm').hide();
+                                            	   $('#project_desc_section_airbnb').hide();
+                                            	   $('#project_desc_section_blind').hide();
+                                            	   $('#project_desc_section_tsr').hide();
+                                            	   $('#project_desc_section_robots').hide();
+                								   $('#project_desc_section_guru').hide();
+                                            	   $('#project_desc_section_raceline').hide();
+                                            	   $('#project_desc_section_catch').hide();
+                                            	   $('#project_desc_section_varcam').hide();
+                								   
+                                            	   
+                                            	  }
+                                            	  
+                                                  function statefarm_onClick() {
+                                            	    hide_all_projects();
+                                                    $('#project_desc_section_statefarm').show();
+                                            	  }
+                                            	  
+                                            	  function airbnb_onClick() {
+                                            	    hide_all_projects();
+                                                    $('#project_desc_section_airbnb').show();
+                                            	  }
+                                            	  
+                                            	  function blind_onClick() {
+                                            	    hide_all_projects();
+                                                    $('#project_desc_section_blind').show();
+                                            	  }
+                                            	  
+                                            	  function tsr_onClick() {
+                                            	    hide_all_projects();
+                                                    $('#project_desc_section_tsr').show();
+                                            	  }
+                                            	  
+                                            	  function robots_onClick() {
+                                            	    hide_all_projects();
+                                                    $('#project_desc_section_robots').show();
+                                            	  }
+                								  
+                								  function guru_onClick() {
+                                            	    hide_all_projects();
+                                                    $('#project_desc_section_guru').show();
+                                            	  }
+                                            	  
+                                            	  function raceline_onClick() {
+                                            	    hide_all_projects();
+                                                    $('#project_desc_section_raceline').show();
+                                            	  }
+                                            	  
+                                            	  function catch_onClick() {
+                                            	    hide_all_projects();
+                                                    $('#project_desc_section_catch').show();
+                                            	  }
+                                            	  
+                                            	  function varcam_onClick() {
+                                            	    hide_all_projects();
+                                                    $('#project_desc_section_varcam').show();
+                                            	  }
+    </script>
+  </head><body>
+    <div class="navbar navbar-default navbar-fixed-top ">
+      <div class="container ">
+        <div class="navbar-header ">
+          <button type="button " class="navbar-toggle " data-toggle="collapse
+    " data-target="#navbar-ex-collapse ">
+            <span class="sr-only ">Toggle navigation</span>
+            <span class="icon-bar "></span>
+            <span class="icon-bar "></span>
+            <span class="icon-bar "></span>
+          </button>
+          <a class="navbar-brand "><span>Silicon Sentient</span></a>
+        </div>
+        <div class="collapse navbar-collapse " id="navbar-ex-collapse ">
+          <ul class="nav navbar-nav navbar-right ">
+            <li>
+              <a href="JohnTitus.html">Author</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="section " id="spacer_top "></div>
+    <div class="section " id="intro ">
+      <div class="container ">
+        <div class="row ">
+          <div class="col-md-3 ">
+            <img src="img\JohnTitus.JPG " class="img-circle img-responsive ">
+          </div>
+          <div class="col-md-8 ">
+            <h1 class="text-left ">About me</h1>
+            <h3 class="text-left ">IT Consultant by day and Deep Learning Researcher by night</h3>
+            <p class="text-justify ">I have a Masters degree in Robotics - Artificial Intelligence and a Bachelors
+              degree in Mechanical Engineering. One degree helps me answer a few things
+              I observe in the physical world, but the other just makes me ask more philosophical
+              questions.</p>
+            <p class="text-justify "></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="section section-primary ">
+      <div class="container ">
+        <div class="row ">
+          <div class="col-sm-6 text-left ">You may download the source code of this page from my github
+            <a class="text-muted " href="https://github.com/titusjj/titusjj.github.io ">repo</a>.
+            <br>
+            <br>
+            <p class="copyright-text ">Created by John Titus, 2016</p>
+          </div>
+          <div class="col-sm-6 ">
+            <br>
+            <div class="col-md-12 text-right ">
+              <a href="https://linkedin.com/in/titusjj "><i class="fa
+    fa-3x fa-fw fa-linkedin text-inverse "></i></a>
+              <a href="https://github.com/titusjj "><i class="fa fa-3x
+    fa-fw fa-github text-inverse "></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  
+
+</body></html>
